@@ -1,0 +1,26 @@
+{
+  "id": "./",
+  "name": "Treasure Finds",
+  "short_name": "Treasure Finds",
+  "description": "Shop Treasure Finds in Belize dollars.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fffdf9",
+  "theme_color": "#b58a38",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icons/treasure-finds-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/treasure-finds-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
