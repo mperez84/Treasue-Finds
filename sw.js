@@ -1,4 +1,4 @@
-const CACHE='treasure-finds-app-v2',ROOT=new URL('./',self.location).href;
+const CACHE='treasure-finds-app-v3',ROOT=new URL('./',self.location).href;
 const ASSETS=['./','./manifest.webmanifest','./icons/treasure-finds-180.png','./icons/treasure-finds-192.png','./icons/treasure-finds-512.png','./decor_left.webp','./decor_right.webp'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)));self.skipWaiting();});
 self.addEventListener('activate',event=>{event.waitUntil((async()=>{for(const key of await caches.keys()){if(key.startsWith('treasure-finds-app-')&&key!==CACHE)await caches.delete(key);}await self.clients.claim();})());});
