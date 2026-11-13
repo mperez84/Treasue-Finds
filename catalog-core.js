@@ -1,7 +1,7 @@
 /* Shared catalog rules. No account credentials belong in catalog data. */
 (function(root){
 'use strict';
-const categories={party:'Party Supplies',toys:'Toys',slippers:'Slippers',home:'Home Décor',household:'Household Items',makeup:'Makeup',hair:'Hair Accessories',jewelry:'Jewelry'};
+const categories={party:'Party Supplies',toys:'Toys',slippers:'Slippers',home:'Home Décor',household:'Household Items',makeup:'Makeup',hair:'Hair Accessories',jewelry:'Jewelry',unique:'Unique Finds & Pre-Loved'};
 function safeImage(value){
  if(typeof value!=='string')return '';
  if(/^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=\s]+$/.test(value))return value;
