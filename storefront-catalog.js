@@ -1,4 +1,6 @@
 'use strict';
+const catalogRender=render;render=function(){catalogRender();for(const p of products){if(p.gallery&&p.category!=='unique'){const img=document.getElementById('photo-'+p.id);const badge=img?.parentElement.querySelector('.photo-caption');if(badge)badge.textContent='Product photos';}}};
+
 (async()=>{
 try{
  const response=await fetch('./data/catalog.json',{cache:'no-store'});if(!response.ok)throw Error('Catalog unavailable');
